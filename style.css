@@ -1,0 +1,209 @@
+/* Google Fonts: M PLUS Rounded 1c を使用 */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
+
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 全体設定 */
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.8;
+  font-size: 16px;
+  padding: 40px 20px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* 見出し */
+h1, h2, h3 {
+  color: #222;
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.2rem;
+  border-left: 5px solid #66aaff;
+  padding-left: 12px;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  font-size: 1.6rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 6px;
+  margin-top: 2.5em;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 2em;
+}
+
+/* 段落 */
+p {
+  margin-bottom: 1.5em;
+}
+
+/* リンク */
+a {
+  color: #3a7bd5;
+  text-decoration: none;
+  border-bottom: 1px dotted #3a7bd5;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #235aa6;
+  border-bottom: 1px solid #235aa6;
+}
+
+/* リスト */
+ul, ol {
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* コードブロック */
+pre {
+  background: #f5f5f5;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+}
+
+code {
+  font-family: Consolas, Monaco, 'Courier New', monospace;
+  background: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* ブロック引用 */
+blockquote {
+  border-left: 4px solid #aaa;
+  padding-left: 1em;
+  color: #666;
+  margin: 1.5em 0;
+  font-style: italic;
+}
+
+/* ボタン */
+button, .btn {
+  background-color: #3a7bd5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #2e5ea0;
+}
+
+/* フォーム要素 */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* フッター */
+footer {
+  margin-top: 4em;
+  padding-top: 2em;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #888;
+  text-align: center;
+}
+
+/* レスポンシブ */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+/* ナビゲーションバー */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  padding: 15px 20px;
+  margin: 0 auto;
+}
+
+.site-title a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3a7bd5;
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #3a7bd5;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
