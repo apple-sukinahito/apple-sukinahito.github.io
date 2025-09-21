@@ -237,3 +237,6 @@ header {
   margin-top: 1px
   color: #222;
 }
+.post h2 {
+  margin-top: 0.5em;
+}
